@@ -8,12 +8,12 @@ type: text/vnd.tiddlywiki
 
 {{$:/themes/tiddlywiki/vanilla/base}}
 
-/** fix table overflow */
-table {
+/** fix native tw table overflow, should not affect other table widget wrapped within div */
+.tc-tiddler-body > table {
   display: block;
   overflow: auto;
 }
-table tbody {
+.tc-tiddler-body > table tbody {
   display: table;
   width: 100%;
 }
