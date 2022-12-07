@@ -326,7 +326,14 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
 	.tc-sidebar-header {
 	  margin-top: 20px;
+    /** fix mobile left side still have width after close */
+    padding-left: 0;
+    padding-right: 0;
 	}
+  .tc-sidebar-header > .tc-reveal {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   /** solve collision with tc-sidebar-scrollable in mobile */
   .tc-topbar {
     z-index: 1002;
