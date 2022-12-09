@@ -371,12 +371,17 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 }
 
 /**
-	卡片流
+	卡片流展示优化
 */
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
 	.tc-story-river {
-	  padding: 10px 10px 0px 10px;
+	  padding-left: 21px;
+	}
+}
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+	.tc-story-river {
+	  padding-top: 42px;
 	}
 }
 
@@ -468,6 +473,8 @@ video::-webkit-media-controls-timeline {
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .tc-sidebar-scrollable {
     height: 100vh;
+    /** show storyflow on the side, showing this is a sidebar, not the front-page */
+    max-width: 90vw;
     z-index: 1001;
     position: fixed;
     overflow: auto;
@@ -486,8 +493,31 @@ video::-webkit-media-controls-timeline {
   span.tc-topbar.tc-topbar-right {
     top: 0px;
     right: 0px;
+    position: absolute;
+  }
+  span.tc-topbar.tc-topbar-right > button.tc-hide-sidebar-btn {
+    top: 0px;
+    right: 0px;
+    position: absolute;
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(2px);
+    /** make close side bar button a long vertical bar */
+    border-radius: 0px;
+    height: 100vh;
+  }
+  span.tc-topbar.tc-topbar-right > button.tc-show-sidebar-btn {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(2px);
+  }
+  span.tc-topbar.tc-topbar-right > button.tc-show-sidebar-btn > svg.tc-image-chevron-left.tc-image-button, span.tc-topbar.tc-topbar-right > button.tc-hide-sidebar-btn > svg.tc-image-chevron-right.tc-image-button {
+    transform: rotate(180deg);
+  }
+  /** make opened-tiddlers-bar move right to not be cover by show-sidebar-btn */
+  section.story-backdrop > p > div.opened-tiddlers-bar.tc-tab-buttons {
+    margin-left: calc(8px * 2 + 28px);
   }
 }
 /** fix z-index */
