@@ -376,7 +376,8 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
 	.tc-story-river {
-	  padding-left: 21px;
+	  padding-left: 2em;
+	  padding-right: 2em;
 	}
 }
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
@@ -498,7 +499,7 @@ video::-webkit-media-controls-timeline {
   span.tc-topbar.tc-topbar-right > button.tc-hide-sidebar-btn {
     top: 0px;
     right: 0px;
-    position: absolute;
+    position: fixed;
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(2px);
     /** make close side bar button a long vertical bar */

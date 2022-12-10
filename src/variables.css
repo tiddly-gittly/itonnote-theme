@@ -1,0 +1,7 @@
+div.tc-page-container {
+  --scrollbar-width: calc(100vw - 100%);
+}
+div.tc-page-container .tc-sidebar-scrollable {
+  /** fit space with close sidebar button */
+  max-width: calc(100vw - (8px * 2 + 2em + var(--scrollbar-width)));
+}
