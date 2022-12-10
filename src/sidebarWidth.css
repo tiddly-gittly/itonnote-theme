@@ -3,7 +3,8 @@ Have to move them into a css file like this */
 div.tc-page-container {
   --scrollbar-width: calc(100vw - 100%);
 }
-div.tc-page-container .tc-sidebar-scrollable {
+.tc-sidebar-scrollable {
   /** fit space with close sidebar button */
   max-width: calc(100vw - (8px * 2 + 2em + var(--scrollbar-width)));
+  width: calc(100vw - (8px * 2 + 2em + var(--scrollbar-width)));
 }

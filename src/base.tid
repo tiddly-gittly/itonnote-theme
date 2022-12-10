@@ -8,6 +8,8 @@ type: text/vnd.tiddlywiki
 
 {{$:/themes/tiddlywiki/vanilla/base}}
 
+<$importvariables filter="[[$:/themes/tiddlywiki/vanilla/base]]">
+
 /** fix native tw table overflow, should not affect other table widget wrapped within div */
 .tc-tiddler-body > table {
   display: block;
@@ -317,13 +319,13 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
   z-index: 1001;
 }
 
-@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (min-width: <<sidebarbreakpoint>>) {
 	.tc-sidebar-scrollable {
 	  padding: 40px 10px 0px 15px;
 	}
 }
 
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (max-width: <<sidebarbreakpoint>>) {
 	.tc-sidebar-header {
 	  margin-top: 20px;
     /** fix mobile left side still have width after close */
@@ -374,13 +376,13 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 	卡片流展示优化
 */
 
-@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (min-width: <<sidebarbreakpoint>>) {
 	.tc-story-river {
 	  padding-left: 2em;
 	  padding-right: 2em;
 	}
 }
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (max-width: <<sidebarbreakpoint>>) {
 	.tc-story-river {
 	  padding-top: 42px;
 	}
@@ -390,7 +392,7 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 	宽屏时隐藏顶部 MenuBar
 */
 
-@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (min-width: <<sidebarbreakpoint>>) {
 	nav.tc-menubar {
 	display: none !important;
 	}
@@ -453,7 +455,7 @@ textarea, input[type=text], input[type=search], input[type=""], input:not([type]
 * Disable this effect on mobile, otherwise it will be hard to find the button
 * From tb_demo_onhover-toolbar-styles
 */
-@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (min-width: <<sidebarbreakpoint>>) {
   .tc-tiddler-frame .tc-titlebar button {
     opacity: 0;
     transition: opacity .5s ease-in-out;
@@ -470,8 +472,19 @@ video::-webkit-media-controls-timeline {
   width: 200px;
 }
 
+@media (min-width: <<sidebarbreakpoint>>) {
+  div.tc-page-container .tc-sidebar-scrollable {
+    width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
+    padding-left: 0;
+  }
+}
+<$reveal type="match" state="$:/state/sidebar" text="no">
+  div.tc-page-container .tc-sidebar-scrollable {
+    width: auto;
+  }
+</$reveal>
 /** Sidebar on mobile, make it sidebar instead of top bar */
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+@media (max-width: <<sidebarbreakpoint>>) {
   .tc-sidebar-scrollable {
     height: 100vh;
     /** show storyflow on the side, showing this is a sidebar, not the front-page */
@@ -530,3 +543,5 @@ video::-webkit-media-controls-timeline {
 .dbadge > span {
   white-space: initial;
 }
+
+</$importvariables>
