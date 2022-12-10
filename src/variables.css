@@ -1,3 +1,5 @@
+/* can't use css variable in tid file, because it will become -— , maybe triggers --- syntax?
+Have to move them into a css file like this */
 div.tc-page-container {
   --scrollbar-width: calc(100vw - 100%);
 }
