@@ -530,7 +530,7 @@ video::-webkit-media-controls-timeline {
     transform: rotate(180deg);
   }
   /** make opened-tiddlers-bar move right to not be cover by show-sidebar-btn */
-  section.story-backdrop > p > div.opened-tiddlers-bar.tc-tab-buttons {
+  section.story-backdrop .opened-tiddlers-bar-container div.opened-tiddlers-bar.tc-tab-buttons {
     margin-left: calc(8px * 2 + 28px);
   }
 }
