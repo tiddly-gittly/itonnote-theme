@@ -1,0 +1,11 @@
+title: $:/core/templates/static.template.css
+
+<!-- from the tiddlywiki repo, core/templates/static.template.css.tid -->
+
+{{$:/boot/boot.css||$:/core/templates/wikified-tiddler}}
+
+{{$:/core/ui/PageStylesheet||$:/core/templates/wikified-tiddler}}
+
+<!-- override the core tiddler to add this -->
+
+{{$:/themes/linonetwo/itonnote/staticTemplateStyle.css||$:/core/templates/wikified-tiddler}}

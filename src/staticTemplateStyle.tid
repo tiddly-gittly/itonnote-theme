@@ -1,0 +1,30 @@
+title: $:/themes/linonetwo/itonnote/staticTemplateStyle.css
+tags: $:/tags/Stylesheet
+type: text/vnd.tiddlywiki
+
+<$importvariables filter="[[$:/themes/tiddlywiki/vanilla/base]]">
+/* Hide sidebar in static template on mobile
+  Normally the sidebar will hide using js in itonnote plugin. But in static template there is no js in static template
+*/
+@media (max-width: <<sidebarbreakpoint>>) {
+  .tc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .tc-sidebar-scrollable {
+    height: auto;
+    position: unset;
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+<!-- fix width related css variable not set in static mode -->
+@media (min-width: <<sidebarbreakpoint>>) {
+  .tc-sidebar-scrollable {
+    width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
+    max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
+  }
+}
+</$importvariables>
