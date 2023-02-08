@@ -1,7 +1,7 @@
 title: $:/themes/linonetwo/itonnote/staticTemplateStyle.css
-tags: $:/tags/Stylesheet
 type: text/vnd.tiddlywiki
 
+<!-- shouldn't add tags: $:/tags/Stylesheet otherwise it will affect non static mode -->
 <$importvariables filter="[[$:/themes/tiddlywiki/vanilla/base]]">
 /* Hide sidebar in static template on mobile
   Normally the sidebar will hide using js in itonnote plugin. But in static template there is no js in static template
