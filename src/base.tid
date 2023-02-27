@@ -118,19 +118,13 @@ div.tc-tiddler-title {
 /**
 	自定义字体
 */
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
-
 * {
   font-variant-ligatures: contextual;
   font-display: swap;
 }
 
-/* Specify in CSS */
-code { font-family: 'Fira Code', monospace; }
-
-@supports (font-variation-settings: normal) {
-  code { font-family: 'Fira Code VF', monospace; }
-}
+/* Only use fira code in code block */
+code { font-family: 'Fira Code VF', monospace; }
 
 /**
   按钮样式

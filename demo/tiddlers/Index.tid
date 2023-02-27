@@ -4,3 +4,6 @@ type: text/vnd.tiddlywiki
 {{$:/snippets/minilanguageswitcher}}
 
 [[TableExample]]
+
+```
+-> => Fira Code <- <=
