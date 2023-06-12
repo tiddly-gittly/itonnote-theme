@@ -1,0 +1,25 @@
+title: $:/themes/linonetwo/itonnote/settings
+tags: $:/tags/ControlPanel/Appearance
+caption: ItonNote/settings
+
+These settings let you customise the behaviour of ItonNote themes.
+
+----
+
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
+<$list filter="[<lang>search[zh]]">
+
+<$checkbox tiddler="$:/core/ui/SideBarSegments/search" tag="$:/tags/SideBarSegment"> 侧边栏搜索框，默认开启，取消则隐藏。隐藏会连带下面的内容隐藏。</$checkbox>
+
+<$checkbox tiddler="$:/themes/linonetwo/itonnote/sidebar-search" tag="$:/tags/Stylesheet"> 侧边栏搜索框旁的按钮，独立出来，默认隐藏。</$checkbox>
+
+</$list>
+
+<$list filter="[<lang>!search[zh]]">
+
+<$checkbox tiddler="$:/core/ui/SideBarSegments/search" tag="$:/tags/SideBarSegment"> Sidebar search box, turned on by default, hidden if unchecked. Hiding will hide the content below with it.</$checkbox>
+
+<$checkbox tiddler="$:/themes/linonetwo/itonnote/sidebar-search" tag="$:/tags/Stylesheet"> The button beside the search box in the sidebar, separate and hidden by default.</$checkbox>
+
+</$list>
+</$list>
