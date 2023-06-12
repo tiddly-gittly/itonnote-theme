@@ -2,3 +2,5 @@ title: $:/themes/linonetwo/itonnote/readme
 type: text/vnd.tiddlywiki
 
 Notion and VSCode inspired theme. Adapted for light theme.
+
+If the sidebar search box is hidden, the core entry `$:/core/ui/SideBarSegments/search`, is modified, removing the tag `$:/tags/SideBarSegment`.
