@@ -1,6 +1,6 @@
 title: $:/themes/linonetwo/itonnote/settings
-tags: $:/tags/ControlPanel/Appearance
-caption: ItonNote/settings
+tags: $:/tags/ControlPanel/SettingsTab
+caption: ItonNote Themes
 
 These settings let you customise the behaviour of ItonNote themes.
 
@@ -9,9 +9,11 @@ These settings let you customise the behaviour of ItonNote themes.
 <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
 <$list filter="[<lang>search[zh]]">
 
-<$checkbox tiddler="$:/core/ui/SideBarSegments/search" tag="$:/tags/SideBarSegment"> 侧边栏搜索框，默认开启，取消则隐藏。隐藏会连带下面的内容隐藏。</$checkbox>
+<$checkbox tiddler="$:/core/ui/SideBarSegments/search" tag="$:/tags/SideBarSegment"> 显示侧边栏搜索框。</$checkbox>
 
-<$checkbox tiddler="$:/themes/linonetwo/itonnote/sidebar-search" tag="$:/tags/Stylesheet"> 侧边栏搜索框旁的按钮，独立出来，默认隐藏。</$checkbox>
+* <$checkbox tiddler="$:/config/themes/itonnote/sidebar-search" field="text" checked="show" unchecked="hide" default="hide">显示侧边栏搜索框的按钮。</$checkbox>
+
+<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide">优化显示，标题过长时与按钮错开。</$checkbox>
 
 </$list>
 
@@ -19,7 +21,9 @@ These settings let you customise the behaviour of ItonNote themes.
 
 <$checkbox tiddler="$:/core/ui/SideBarSegments/search" tag="$:/tags/SideBarSegment"> Sidebar search box, turned on by default, hidden if unchecked. Hiding will hide the content below with it.</$checkbox>
 
-<$checkbox tiddler="$:/themes/linonetwo/itonnote/sidebar-search" tag="$:/tags/Stylesheet"> The button beside the search box in the sidebar, separate and hidden by default.</$checkbox>
+* <$checkbox tiddler="$:/config/themes/itonnote/sidebar-search" field="text" checked="show" unchecked="hide" default="hide"> Button to display the search box in the sidebar. </$checkbox>
+
+<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide"> Optimize the display, staggered with the button when the title is too long </$checkbox>
 
 </$list>
 </$list>
