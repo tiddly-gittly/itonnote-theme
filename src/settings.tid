@@ -13,7 +13,7 @@ These settings let you customise the behaviour of ItonNote themes.
 
 * <$checkbox tiddler="$:/config/themes/itonnote/sidebar-search" field="text" checked="show" unchecked="hide" default="hide">显示侧边栏搜索框的按钮。</$checkbox>
 
-<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide">优化显示，使标题过长时与按钮错开。</$checkbox>
+<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide">优化显示，标题过长时与按钮错开。</$checkbox>
 
 </$list>
 
@@ -23,7 +23,7 @@ These settings let you customise the behaviour of ItonNote themes.
 
 * <$checkbox tiddler="$:/config/themes/itonnote/sidebar-search" field="text" checked="show" unchecked="hide" default="hide"> Button to display the search box in the sidebar. </$checkbox>
 
-<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide"> Optimize the display to stagger titles with buttons when they are too long. </$checkbox>
+<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide"> Optimize the display, staggered with the button when the title is too long </$checkbox>
 
 </$list>
 </$list>
