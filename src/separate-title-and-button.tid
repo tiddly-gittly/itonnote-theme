@@ -1,0 +1,15 @@
+title: $:/themes/linonetwo/itonnote/separate-title-and-button
+tags: $:/tags/Stylesheet
+
+<$reveal state="$:/config/themes/itonnote/separate-title-and-button" type="match" text="show">
+
+/**
+	让标题与按钮分隔开。
+*/
+.tc-titlebar h2 {
+	display: table-header-group;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+
+</$reveal>

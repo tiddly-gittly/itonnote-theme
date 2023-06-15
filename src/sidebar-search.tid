@@ -1,6 +1,8 @@
 title: $:/themes/linonetwo/itonnote/sidebar-search
 tags: $:/tags/Stylesheet
 
+<$reveal state="$:/config/themes/itonnote/sidebar-search" type="match" text="hide">
+
 /**
 	侧边栏搜索框旁的按钮，独立出来，默认隐藏。
 */
@@ -19,3 +21,5 @@ tags: $:/tags/Stylesheet
 	margin: 0;
 	margin-bottom: 20px;
 }
+
+</$reveal>
