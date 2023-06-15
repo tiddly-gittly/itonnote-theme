@@ -6,6 +6,7 @@
 	"core-version": ">=5.0.0",
 	"plugin-type": "theme",
 	"description": "Notion and VSCode inspired theme",
+	"list": "readme settings",
 	"dependents": ["$:/themes/tiddlywiki/vanilla"],
 	"plugin-priority": "1"
 }
