@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
   代码样式
 */
 
-p > code, li > code {
+p > code, li > code, p code[data-slate-leaf=true] {
   box-decoration-break: clone;
   padding: .1rem .3rem .2rem;
   border-radius: .2rem;
