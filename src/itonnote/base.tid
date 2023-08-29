@@ -346,13 +346,6 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 /**
 	卡片流展示优化
 */
-
-@media (min-width: <<sidebarbreakpoint>>) {
-	.tc-story-river {
-	  padding-left: 2em;
-	  padding-right: 2em;
-	}
-}
 @media (max-width: <<sidebarbreakpoint>>) {
 	.tc-story-river {
 	  padding-top: 42px;
@@ -446,7 +439,7 @@ video::-webkit-media-controls-timeline {
 @media (min-width: <<sidebarbreakpoint>>) {
   div.tc-page-container .tc-sidebar-scrollable {
     width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
-    padding-left: 0;
+    padding-left: 2em;
   }
 }
 <$reveal type="match" state="$:/state/sidebar" text="no">
