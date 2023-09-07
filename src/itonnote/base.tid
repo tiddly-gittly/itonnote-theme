@@ -489,6 +489,10 @@ video::-webkit-media-controls-timeline {
     top: 0;
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(2px);
+    <$reveal type="match" state="$:/info/tidgi-mobile" text="yes">
+      /** fix android status bar cover the tc-show-sidebar-btn */
+      top: 30px;
+    </$reveal>
   }
   span.tc-topbar.tc-topbar-right > button.tc-show-sidebar-btn > svg.tc-image-chevron-left.tc-image-button, span.tc-topbar.tc-topbar-right > button.tc-hide-sidebar-btn > svg.tc-image-chevron-right.tc-image-button {
     transform: rotate(180deg);
@@ -496,6 +500,10 @@ video::-webkit-media-controls-timeline {
   /** make opened-tiddlers-bar move right to not be cover by show-sidebar-btn */
   section.story-backdrop .opened-tiddlers-bar-container div.opened-tiddlers-bar.tc-tab-buttons {
     margin-left: calc(8px * 2 + 28px);
+    <$reveal type="match" state="$:/info/tidgi-mobile" text="yes">
+      /** fix android status bar cover the opened-tiddlers-bar */
+      margin-top: 30px;
+    </$reveal>
   }
 }
 /** fix z-index */
