@@ -465,7 +465,7 @@ video::-webkit-media-controls-timeline {
     width: 2em;
     height: 2em;
     box-sizing: content-box;
-    border-radius: 999px;
+    border-bottom-right-radius: 50%;
   }
   /** move sidebar close button to top right */
   span.tc-topbar.tc-topbar-right {
@@ -478,7 +478,7 @@ video::-webkit-media-controls-timeline {
     right: 0px;
     position: fixed;
     background: rgba(255,255,255,0.3);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     /** make close side bar button a long vertical bar */
     border-radius: 0px;
     height: 100vh;
@@ -488,10 +488,10 @@ video::-webkit-media-controls-timeline {
     left: 0;
     top: 0;
     background: rgba(255,255,255,0.3);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     <$reveal type="match" state="$:/info/tidgi-mobile" text="yes">
       /** fix android status bar cover the tc-show-sidebar-btn */
-      top: 30px;
+      height: 4em;
     </$reveal>
   }
   span.tc-topbar.tc-topbar-right > button.tc-show-sidebar-btn > svg.tc-image-chevron-left.tc-image-button, span.tc-topbar.tc-topbar-right > button.tc-hide-sidebar-btn > svg.tc-image-chevron-right.tc-image-button {
@@ -499,7 +499,7 @@ video::-webkit-media-controls-timeline {
   }
   /** make opened-tiddlers-bar move right to not be cover by show-sidebar-btn */
   section.story-backdrop .opened-tiddlers-bar-container div.opened-tiddlers-bar.tc-tab-buttons {
-    margin-left: calc(8px * 2 + 28px);
+    margin-left: calc(8px * 2 + 32px);
     <$reveal type="match" state="$:/info/tidgi-mobile" text="yes">
       /** fix android status bar cover the opened-tiddlers-bar */
       margin-top: 30px;

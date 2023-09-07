@@ -83,7 +83,7 @@ sidebar-tiddler-link-foreground-hover: #444444
 sidebar-tiddler-link-foreground: #999999
 site-title-foreground: <<colour tiddler-title-foreground>>
 static-alert-foreground: #aaaaaa
-tab-background-selected: rgba(255, 255, 255, 0.1)
+tab-background-selected: rgba(255, 255, 255, 0.3)
 tab-background: transparent
 tab-border-selected: #d8d8d8
 tab-border: #cccccc
