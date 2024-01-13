@@ -444,7 +444,11 @@ video::-webkit-media-controls-timeline {
 }
 <$reveal type="match" state="$:/state/sidebar" text="no">
   div.tc-page-container .tc-sidebar-scrollable {
-    width: auto;
+    /**
+      * Compage-control-below-pagepletely hide sidebar dom node when sidebar is not opened.
+      * To fix sometimes it is still 20px width after close. 
+      */
+    display: none;
   }
 </$reveal>
 /** Sidebar on mobile, make it sidebar instead of top bar */
