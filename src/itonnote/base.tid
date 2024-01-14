@@ -60,9 +60,7 @@ div.cm-code-block-line:hover, div.latex:hover {
 div.tc-tiddler-title {
   background: <<colour tiddler-title-background>>;
   backdrop-filter: blur(10px);
-  /** fix tag on top of dropdown */
-  top: 0px;
-  z-index: 1;
+  z-index: 1000;
   position: sticky;
 }
 /** 编辑器工具栏 */

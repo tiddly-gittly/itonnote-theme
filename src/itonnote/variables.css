@@ -3,7 +3,7 @@
  */
 /** 顶部标题栏半透明，别的组件都得根据它下移 */
 body.tc-body {
-  --menubar-height: 29px;
+  --menubar-height: 27px;
 }
 
 /** 使用变量 */
