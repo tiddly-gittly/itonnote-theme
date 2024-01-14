@@ -60,7 +60,7 @@ div.cm-code-block-line:hover, div.latex:hover {
 div.tc-tiddler-title {
   background: <<colour tiddler-title-background>>;
   backdrop-filter: blur(10px);
-  z-index: 1000;
+  z-index: 890;
   position: sticky;
 }
 /** 编辑器工具栏 */
@@ -68,7 +68,7 @@ div.tc-tiddler-title {
   background: <<colour tiddler-editor-background>>;
   backdrop-filter: blur(10px);
   position: sticky;
-  z-index: 1000;
+  z-index: 890;
 }
 .tc-tiddler-preview {
   overflow: unset;
