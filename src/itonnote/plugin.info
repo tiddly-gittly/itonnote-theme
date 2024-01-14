@@ -1,7 +1,7 @@
 {
 	"title": "$:/themes/linonetwo/itonnote",
 	"name": "ItonNote Theme",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"author": "LinOnetwo",
 	"core-version": ">=5.3.1",
 	"plugin-type": "theme",
