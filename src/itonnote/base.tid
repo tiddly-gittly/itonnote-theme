@@ -28,13 +28,13 @@ p > code, li > code, code[data-slate-leaf=true] {
   box-decoration-break: clone;
   padding: .1rem .3rem .2rem;
   border-radius: .2rem;
-  background: <<colour code-background>>
+  background: <<colour code-background>>;
 }
 
 .hljs {
   background-color: <<colour page-background>>;
   border: none;
-  box-shadow: <<colour sidebar-foreground-shadow>>
+  box-shadow: <<colour sidebar-foreground-shadow>>;
 }
 
 pre {
@@ -42,10 +42,10 @@ pre {
 }
 
 div.cm-code-block-line, div.latex {
-  background: <<colour button-background>>
+  background: <<colour button-background>>;
 }
 div.cm-code-block-line:hover, div.latex:hover {
-  background: <<colour button-background-hover>>
+  background: <<colour button-background-hover>>;
 }
 
 /**
