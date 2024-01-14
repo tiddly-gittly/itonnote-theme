@@ -1,0 +1,16 @@
+/**
+ * 由于 Tiddlywiki 会把 base.tid 里的 -- 识别为分隔符，变为 - ，所以涉及到变量的地方都放在这个文件里。
+ */
+/** 顶部标题栏半透明，别的组件都得根据它下移 */
+body.tc-body {
+  --menubar-height: 29px;
+}
+
+/** 使用变量 */
+div.tc-tiddler-title {
+  /** fix menubar with sticky title https://github.com/Jermolene/TiddlyWiki5/issues/4471#issuecomment-594456486*/
+  top: var(--menubar-height);
+}
+.tc-editor-toolbar {
+  top: calc(var(--menubar-height) + 50px);
+}
