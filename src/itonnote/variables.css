@@ -1,5 +1,6 @@
 /**
  * 由于 Tiddlywiki 会把 base.tid 里的 -- 识别为分隔符，变为 - ，所以涉及到变量的地方都放在这个文件里。
+ // TODO: 如果需要用变量，就用 \rules except horizrule dash
  */
 /** 顶部标题栏半透明，别的组件都得根据它下移 */
 body.tc-body {
