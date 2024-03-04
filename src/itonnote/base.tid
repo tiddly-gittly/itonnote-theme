@@ -139,6 +139,10 @@ button:not(.tc-btn-invisible):hover {
 button:not(.tc-btn-invisible) svg {
 	fill: <<colour tab-foreground>>;
 }
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
 
 /** 收合栏，修复由于 button:not(.tc-tab-selected) 带来的样式。没法在那边 not ，因为 not 列表太长会导致优先级过高 */
 button.tc-fold-banner {
