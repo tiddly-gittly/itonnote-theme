@@ -1,0 +1,18 @@
+title: $:/themes/linonetwo/itonnote/config
+tags: $:/tags/ControlPanel/SettingsTab
+caption: <<lingo Name $:/themes/linonetwo/itonnote/language/>>
+
+\procedure lingo-base() $:/themes/linonetwo/itonnote/language/
+
+<<lingo Config/Description>>
+
+---
+
+!! <<lingo PluginConfigs>>
+
+;<<lingo Configs/SideBarSegments/Caption>>
+:<$checkbox tiddler="$:/core/ui/SideBarSegments/search" tag="$:/tags/SideBarSegment"> <<lingo Configs/SideBarSegments/Description>></$checkbox>
+;<<lingo Configs/SidebarSearch/Caption>>
+:<$checkbox tiddler="$:/config/themes/itonnote/sidebar-search" field="text" checked="show" unchecked="hide" default="hide"> <<lingo Configs/SidebarSearch/Description>></$checkbox>
+;<<lingo Configs/SeparateTitleAndButton/Caption>>
+:<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide"> <<lingo Configs/SeparateTitleAndButton/Description>></$checkbox>

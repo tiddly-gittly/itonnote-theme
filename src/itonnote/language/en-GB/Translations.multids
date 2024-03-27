@@ -1,0 +1,12 @@
+title: $:/themes/linonetwo/itonnote/language/en-GB/
+
+Name: TidGi Preconfig theme
+Description: Notion and VSCode inspired theme.
+PluginConfigs: Plugin Configs
+ConfigDescription: These settings let you customise the behaviour of TidGi Preconfig theme plugin.
+Configs/SideBarSegments/Caption: Sidebar search box, turned on by default, hidden if unchecked. Hiding will hide the content below with it.
+Configs/SideBarSegments/Description: With the Command Menu plugin for searching, you don't need the Tiddlywiki native search box, uncheck to hide the native search box.
+Configs/SidebarSearch/Caption: Button to display the search box in the sidebar.
+Configs/SidebarSearch/Description: In the case of displaying a sidebar search box, feel the need to display additional buttons for the sidebar search box. You can hide it if you think it duplicates the advanced search button on the page control bar.
+Configs/SeparateTitleAndButton/Caption: Staggered with the button when the title is too long, to optimize the display.
+Configs/SeparateTitleAndButton/Description: Adjusting title display via CSS.

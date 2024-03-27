@@ -1,0 +1,12 @@
+title: $:/themes/linonetwo/itonnote/language/zh-Hans/
+
+Name: 太记预置主题
+Description: 灵感来自 Notion 和 VSCode 的主题
+PluginConfigs: 插件设置
+ConfigDescription: 通过这些设置，您可以自定义「太记预置主题」插件的行为。
+Configs/SideBarSegments/Caption: 显示侧边栏搜索框。
+Configs/SideBarSegments/Description: 有命令菜单插件用于搜索，就不需要太微原生的搜索框了，取消勾选可以隐藏原生搜索框。
+Configs/SidebarSearch/Caption: 显示侧边栏搜索框的按钮。
+Configs/SidebarSearch/Description: 在显示侧边栏搜索框的情况下，是否需要显示侧边栏搜索框旁边的高级搜索按钮。如果你觉得它与页面控制栏上的高级搜索按钮重复了可以隐藏它。
+Configs/SeparateTitleAndButton/Caption: 标题过长时与按钮错开以优化显示。
+Configs/SeparateTitleAndButton/Description: 通过CSS调整标题显示。
