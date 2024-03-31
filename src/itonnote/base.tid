@@ -121,8 +121,10 @@ code { font-family: 'Fira Code VF', monospace; }
   按钮样式
 */
 
-/** 除了工具栏上的按钮以外，其它按钮 */
-button:not(.tc-btn-invisible) {
+/** 除了工具栏上的按钮以外，其它按钮, 允许用 .no-itonnote-button-overwrite 取消覆盖
+  .tlui-button 是 tldraw 白板的
+ */
+div:not(.no-itonnote-button-overwrite) button:not(.tc-btn-invisible):not(.tlui-button) {
   color: <<colour button-foreground>>;
   padding: 5px 10px;
 	margin: 2px;
@@ -132,11 +134,11 @@ button:not(.tc-btn-invisible) {
   /** hover动画 */
   transition: background-color 0.2s;
 }
-button:not(.tc-btn-invisible):hover {
+div:not(.no-itonnote-button-overwrite) button:not(.tc-btn-invisible):not(.tlui-button):hover {
 	background-color: <<colour button-background-hover>>;
 }
 
-button:not(.tc-btn-invisible) svg {
+div:not(.no-itonnote-button-overwrite) button:not(.tc-btn-invisible):not(.tlui-button) svg {
 	fill: <<colour tab-foreground>>;
 }
 button:disabled {
