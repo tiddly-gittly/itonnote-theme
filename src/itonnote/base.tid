@@ -57,11 +57,15 @@ div.cm-code-block-line:hover, div.latex:hover {
   box-shadow: <<colour sidebar-foreground-shadow>>;
 }
 
-div.tc-tiddler-title {
-  background: <<colour tiddler-title-background>>;
+/**
   backdrop-filter: blur(10px);
   z-index: 890;
   position: sticky;
+  注释掉这三个，避免取消条目标题置顶功能失效
+*/
+
+div.tc-tiddler-title {
+  background: <<colour tiddler-title-background>>;
 }
 /** 编辑器工具栏 */
 .tc-editor-toolbar {
