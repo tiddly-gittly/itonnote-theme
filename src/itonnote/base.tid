@@ -57,11 +57,23 @@ div.cm-code-block-line:hover, div.latex:hover {
   box-shadow: <<colour sidebar-foreground-shadow>>;
 }
 
+/** 使用了5.3.3之后的条件快捷语法 */
+
+<% if [[$:/themes/tiddlywiki/vanilla/options/stickytitles]get[text]match[yes]] %>
 div.tc-tiddler-title {
   background: <<colour tiddler-title-background>>;
   backdrop-filter: blur(10px);
-  z-index: 890;
+  z-index: 900;
   position: sticky;
+}
+<% else %>
+div.tc-tiddler-title {
+  background: <<colour tiddler-title-background>>;
+}
+<% endif %>
+
+div.tc-tiddler-title {
+  background: <<colour tiddler-title-background>>;
 }
 /** 编辑器工具栏 */
 .tc-editor-toolbar {
