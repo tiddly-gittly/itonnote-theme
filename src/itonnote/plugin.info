@@ -1,9 +1,9 @@
 {
 	"title": "$:/themes/linonetwo/itonnote",
 	"name": "ItonNote Theme",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"author": "LinOnetwo",
-	"core-version": ">=5.3.1",
+	"core-version": ">=5.3.3",
 	"plugin-type": "theme",
 	"description": "Notion and VSCode inspired theme",
 	"list": "readme config tree",
