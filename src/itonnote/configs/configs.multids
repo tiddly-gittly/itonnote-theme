@@ -1,0 +1,6 @@
+title: $:/themes/linonetwo/itonnote/configs/
+
+separate-title-and-button: no
+sidebar-search: show
+sticky-edit-title: yes
+sticky-edit-toolbar: yes

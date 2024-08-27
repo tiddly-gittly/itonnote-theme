@@ -57,18 +57,22 @@ div.cm-code-block-line:hover, div.latex:hover {
   box-shadow: <<colour sidebar-foreground-shadow>>;
 }
 
-/** 使用了5.3.3之后的条件快捷语法 */
-
-<% if [[$:/themes/tiddlywiki/vanilla/options/stickytitles]get[text]match[yes]] %>
+/** 优化标题区域在长条目里的显示，磁吸顶部不隐藏，查看模式和编辑模式可分别开启。 */
 div.tc-tiddler-title {
   background: <<colour tiddler-title-background>>;
+}
+<% if [[$:/themes/tiddlywiki/vanilla/options/stickytitles]get[text]match[yes]] %>
+div.tc-tiddler-title {
   backdrop-filter: blur(10px);
   z-index: 900;
   position: sticky;
 }
-<% else %>
-div.tc-tiddler-title {
-  background: <<colour tiddler-title-background>>;
+<% endif %>
+<% if [[$:/themes/linonetwo/itonnote/configs/sticky-edit-title]get[text]match[yes]] %>
+div.tc-tiddler-edit-title {
+  backdrop-filter: blur(10px);
+  z-index: 900;
+  position: sticky;
 }
 <% endif %>
 
@@ -76,12 +80,15 @@ div.tc-tiddler-title {
   background: <<colour tiddler-title-background>>;
 }
 /** 编辑器工具栏 */
+<% if [[$:/themes/linonetwo/itonnote/configs/sticky-edit-toolbar]get[text]match[yes]] %>
 .tc-editor-toolbar {
   background: <<colour tiddler-editor-background>>;
   backdrop-filter: blur(10px);
   position: sticky;
   z-index: 890;
 }
+<% endif %>
+
 .tc-tiddler-preview {
   overflow: unset;
 }

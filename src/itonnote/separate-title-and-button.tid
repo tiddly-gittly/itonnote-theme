@@ -1,8 +1,7 @@
 title: $:/themes/linonetwo/itonnote/separate-title-and-button
 tags: $:/tags/Stylesheet
 
-<$reveal state="$:/config/themes/itonnote/separate-title-and-button" type="match" text="show">
-
+<% if [[$:/themes/linonetwo/itonnote/configs/separate-title-and-button]get[text]match[yes]] %>
 /**
 	让标题与按钮分隔开。
 */
@@ -11,5 +10,4 @@ tags: $:/tags/Stylesheet
 	word-wrap:break-word;
 	word-break:break-all;
 }
-
-</$reveal>
+<% endif %>

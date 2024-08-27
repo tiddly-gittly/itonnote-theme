@@ -10,3 +10,7 @@ Configs/SidebarSearch/Caption: Button to display the search box in the sidebar.
 Configs/SidebarSearch/Description: In the case of displaying a sidebar search box, feel the need to display additional buttons for the sidebar search box. You can hide it if you think it duplicates the advanced search button on the page control bar.
 Configs/SeparateTitleAndButton/Caption: Staggered with the button when the title is too long, to optimize the display.
 Configs/SeparateTitleAndButton/Description: Adjusting title display via CSS.
+Configs/StickyEditToolbar/Caption: Fixed toolbar at the top when editing
+Configs/StickyEditToolbar/Description: In edit mode, the toolbar is fixed at the top of the screen for easier use when the tiddler content is long.
+Configs/StickyEditTitle/Caption: Fixed title at the top when editing
+Configs/StickyEditTitle/Description: If you have turned off the sticky title in view mode, you can still turn it on in edit mode, the title is fixed at the top of the screen for easier saving or cancelling when the tiddler content is long.

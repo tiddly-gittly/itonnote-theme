@@ -10,3 +10,7 @@ Configs/SidebarSearch/Caption: 显示侧边栏搜索框的按钮。
 Configs/SidebarSearch/Description: 在显示侧边栏搜索框的情况下，是否需要显示侧边栏搜索框旁边的高级搜索按钮。如果你觉得它与页面控制栏上的高级搜索按钮重复了可以隐藏它。
 Configs/SeparateTitleAndButton/Caption: 标题过长时与按钮错开以优化显示。
 Configs/SeparateTitleAndButton/Description: 通过CSS调整标题显示。
+Configs/StickyEditToolbar/Caption: 编辑时工具栏固定在顶部
+Configs/StickyEditToolbar/Description: 在编辑模式时，工具栏固定在屏幕顶部，以便在条目内容较长时更方便使用工具栏。
+Configs/StickyEditTitle/Caption: 编辑时标题固定在顶部
+Configs/StickyEditTitle/Description: 关闭了查看模式时标题吸顶时，勾选可以依然开启在编辑模式时，标题固定在屏幕顶部，以便在条目内容较长时更方便保存或取消。

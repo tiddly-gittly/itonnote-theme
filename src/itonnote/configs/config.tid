@@ -13,6 +13,16 @@ caption: <<lingo Name $:/themes/linonetwo/itonnote/language/>>
 ;<<lingo Configs/SideBarSegments/Caption>>
 :<$checkbox tiddler="$:/core/ui/SideBarSegments/search" tag="$:/tags/SideBarSegment"> <<lingo Configs/SideBarSegments/Description>></$checkbox>
 ;<<lingo Configs/SidebarSearch/Caption>>
-:<$checkbox tiddler="$:/config/themes/itonnote/sidebar-search" field="text" checked="show" unchecked="hide" default="hide"> <<lingo Configs/SidebarSearch/Description>></$checkbox>
+:<$checkbox tiddler="$:/themes/linonetwo/itonnote/configs/sidebar-search" field="text" checked="show" unchecked="hide" default="hide"> <<lingo Configs/SidebarSearch/Description>></$checkbox>
 ;<<lingo Configs/SeparateTitleAndButton/Caption>>
-:<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" default="hide"> <<lingo Configs/SeparateTitleAndButton/Description>></$checkbox>
+:<$checkbox tiddler="$:/themes/linonetwo/itonnote/configs/separate-title-and-button" field="text" checked="yes" unchecked="no" default="no"> <<lingo Configs/SeparateTitleAndButton/Description>></$checkbox>
+;<<lingo Configs/StickyEditToolbar/Caption>>
+:<$checkbox tiddler="$:/themes/linonetwo/itonnote/configs/sticky-edit-toolbar" field="text" checked="yes" unchecked="no" default="no"> <<lingo Configs/StickyEditToolbar/Description>></$checkbox>
+;{{$:/language/ThemeTweaks/Options/StickyTitles}}
+:<$checkbox tiddler="$:/themes/tiddlywiki/vanilla/options/stickytitles" field="text" checked="yes" unchecked="no" default="no"> {{$:/language/ThemeTweaks/Options/StickyTitles/Hint}}</$checkbox>
+<% if [[$:/themes/tiddlywiki/vanilla/options/stickytitles]get[text]!match[yes]] %>
+
+;<<lingo Configs/StickyEditTitle/Caption>>
+:<$checkbox tiddler="$:/themes/linonetwo/itonnote/configs/sticky-edit-title" field="text" checked="yes" unchecked="no" default="no"> <<lingo Configs/StickyEditTitle/Description>></$checkbox>
+
+<% endif %>
