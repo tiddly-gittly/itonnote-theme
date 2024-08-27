@@ -1,7 +1,11 @@
 title: $:/themes/linonetwo/itonnote/base
 tags: $:/tags/Stylesheet
-type: text/vnd.tiddlywiki
 
+\rules except horizrule dash
+
+/**
+ * 由于 Tiddlywiki 会把 base.tid 里的 -- 识别为分隔符，变为 - ，所以如果需要用变量，就用 \rules except horizrule dash
+ */
 /*
 ** Start with the vanilla theme and normalize CSS reset, and then belay some of its effects
 */
@@ -67,12 +71,19 @@ div.tc-tiddler-title {
   z-index: 900;
   position: sticky;
 }
+/** fix menubar with sticky title https://github.com/Jermolene/TiddlyWiki5/issues/4471#issuecomment-594456486*/
+div.tc-tiddler-title {
+  top: calc(var(--menubar-height) - 1px);
+}
 <% endif %>
 <% if [[$:/themes/linonetwo/itonnote/configs/sticky-edit-title]get[text]match[yes]] %>
 div.tc-tiddler-edit-title {
   backdrop-filter: blur(10px);
   z-index: 900;
   position: sticky;
+}
+div.tc-tiddler-edit-title {
+  top: calc(var(--menubar-height) - 1px);
 }
 <% endif %>
 
@@ -87,6 +98,16 @@ div.tc-tiddler-title {
   position: sticky;
   z-index: 890;
 }
+  <% if [[$:/themes/linonetwo/itonnote/configs/sticky-edit-title]get[text]match[yes]] %>
+    /** 当编辑标题吸顶时，编辑器工具栏下移标题一般会有的高度 */
+    .tc-editor-toolbar {
+      top: calc(var(--menubar-height) + 50px);
+    }
+  <% else %>
+    .tc-editor-toolbar {
+      top: calc(var(--menubar-height) - 1px);
+    }
+  <% endif %>
 <% endif %>
 
 .tc-tiddler-preview {
