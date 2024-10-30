@@ -108,12 +108,12 @@ div.tc-tiddler-title {
       top: calc(var(--menubar-height) - 1px);
     }
   <% endif %>
+  /** 父级元素不能有任何overflow:visible以外的overflow设置，否则没有粘滞效果 */
+  div.tc-tiddler-preview.tc-tiddler-editor {
+    overflow: unset;
+  }
 <% endif %>
 
-/** 父级元素不能有任何overflow:visible以外的overflow设置，否则没有粘滞效果 */
-div.tc-tiddler-preview.tc-tiddler-editor {
-  overflow: unset;
-}
 .tc-block-dropdown {
   z-index: 1001;
 }
