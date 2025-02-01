@@ -6,3 +6,6 @@ title: $:/themes/linonetwo/itonnote/language/en-GB/Readme
 
 <<lingo Description>>
 
+!! Recommended Installation
+
+* $:/plugins/linonetwo/fira-code-font plugin provides local Fira Code font, which is beneficial for displaying programming symbols.

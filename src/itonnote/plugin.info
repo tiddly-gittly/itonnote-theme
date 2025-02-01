@@ -1,12 +1,13 @@
 {
 	"title": "$:/themes/linonetwo/itonnote",
 	"name": "ItonNote Theme",
-	"version": "1.2.2",
+	"version": "1.3.0",
 	"author": "LinOnetwo",
 	"core-version": ">=5.3.3",
 	"plugin-type": "theme",
 	"description": "Notion and VSCode inspired theme",
 	"list": "readme config tree",
+  "stability": "STABILITY_2_STABLE",
 	"dependents": ["$:/themes/tiddlywiki/vanilla"],
 	"plugin-priority": "1"
 }

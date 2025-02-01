@@ -5,3 +5,7 @@ title: $:/themes/linonetwo/itonnote/language/zh-Hans/Readme
 ! <<lingo Name>>
 
 <<lingo Description>>
+
+!! 推荐安装
+
+* $:/plugins/linonetwo/fira-code-font 插件提供了本地 Fira Code 字体，有利于展示编程用到的符号。

@@ -1,0 +1,10 @@
+{
+  "title": "$:/plugins/linonetwo/fira-code-font",
+  "name": "fira-code-font",
+  "author": "linonetwo",
+  "description": "Provides local Fira Code font.",
+  "plugin-type": "plugin",
+  "stability": "STABILITY_1_EXPERIMENTAL",
+  "version": "0.0.1",
+  "list": "readme"
+}
