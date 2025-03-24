@@ -73,7 +73,7 @@ div.tc-tiddler-title {
 }
 /** fix menubar with sticky title https://github.com/Jermolene/TiddlyWiki5/issues/4471#issuecomment-594456486*/
 div.tc-tiddler-title {
-  top: calc(var(--menubar-height) - 1px);
+  top: calc(var(--menubar-height, 0px) - 1px);
 }
 <% endif %>
 <% if [[$:/themes/linonetwo/itonnote/configs/sticky-edit-title]get[text]match[yes]] %>
@@ -83,7 +83,7 @@ div.tc-tiddler-edit-title {
   position: sticky;
 }
 div.tc-tiddler-edit-title {
-  top: calc(var(--menubar-height) - 1px);
+  top: calc(var(--menubar-height, 0px) - 1px);
 }
 <% endif %>
 
@@ -101,11 +101,11 @@ div.tc-tiddler-title {
   <% if [[$:/themes/linonetwo/itonnote/configs/sticky-edit-title]get[text]match[yes]] %>
     /** 当编辑标题吸顶时，编辑器工具栏下移标题一般会有的高度 */
     .tc-editor-toolbar {
-      top: calc(var(--menubar-height) + 50px);
+      top: calc(var(--menubar-height, 0px) + 50px);
     }
   <% else %>
     .tc-editor-toolbar {
-      top: calc(var(--menubar-height) - 1px);
+      top: calc(var(--menubar-height, 0px) - 1px);
     }
   <% endif %>
   /** 父级元素不能有任何overflow:visible以外的overflow设置，否则没有粘滞效果 */
