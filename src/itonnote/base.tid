@@ -492,8 +492,6 @@ video::-webkit-media-controls-timeline {
 @media (max-width: <<sidebarbreakpoint>>) {
   .tc-page-view-classic .tc-sidebar-scrollable {
     height: 100vh;
-    /** show storyflow on the side, showing this is a sidebar, not the front-page */
-    max-width: 90vw;
     z-index: 1001;
     position: fixed;
     overflow: auto;
