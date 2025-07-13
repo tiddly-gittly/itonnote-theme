@@ -148,7 +148,7 @@ div.tc-tiddler-title {
 }
 
 /**
-	自定义字体
+  自定义字体
 */
 * {
   font-variant-ligatures: contextual;
@@ -168,7 +168,7 @@ code { font-family: 'Fira Code VF', monospace; }
 button {
   color: <<colour button-foreground>>;
   padding: 5px 10px;
-	margin: 2px;
+  margin: 2px;
   border-radius: 5px;
   border: <<colour button-border>>;
   cursor: pointer;
@@ -176,11 +176,11 @@ button {
   transition: background-color 0.2s;
 }
 button:hover {
-	background-color: <<colour button-background-hover>>;
+  background-color: <<colour button-background-hover>>;
 }
 
 button svg {
-	fill: <<colour tab-foreground>>;
+  fill: <<colour tab-foreground>>;
 }
 button:disabled {
   cursor: not-allowed;
@@ -216,27 +216,27 @@ button.tc-unfold-banner {
 
 /** Tab 上的按钮 */
 .tc-tab-buttons > button {
-	border-radius: 0px;
+  border-radius: 0px;
 }
 .tc-tab-buttons button:not(.tc-tab-selected) {
-	fill: none;
-	background-color: <<colour tab-background>>;
-	color: <<colour tab-foreground>>;
-	border: none;
+  fill: none;
+  background-color: <<colour tab-background>>;
+  color: <<colour tab-foreground>>;
+  border: none;
   border-radius: 0px;
 }
 .tc-tab-buttons button:not(.tc-tab-selected):hover {
-	background-color: <<colour button-background-hover>>;
+  background-color: <<colour button-background-hover>>;
 }
 .tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
-	border: none;
-	border-bottom: 2px solid silver;
+  border: none;
+  border-bottom: 2px solid silver;
   border-radius: 0px;
 }
 .tc-tab-buttons button.tc-tab-selected {
-	border: none;
-	border-bottom: 2px solid silver;
-	background-color: #f4f4f4;
+  border: none;
+  border-bottom: 2px solid silver;
+  background-color: #f4f4f4;
   border-radius: 0px;
 }
 
@@ -281,10 +281,10 @@ a.tc-tiddlylink:hover {
 }
 
 a.tc-tiddlylink-external, a.tc-tiddlylink-external:visited {
-	padding: 2px;
+  padding: 2px;
   padding-bottom: 0px;
-	border-bottom: <<colour external-link-underline>>;
-	text-decoration: none;
+  border-bottom: <<colour external-link-underline>>;
+  text-decoration: none;
   box-decoration-break: clone;
   font-weight: bold;
   color: <<external-link-foreground>>;
@@ -321,11 +321,11 @@ a.tc-tiddlylink-external:hover {
 }
 
 a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-absolute:hover {
-	background-color: <<colour modal-border>>;
+  background-color: <<colour modal-border>>;
 }
 
 /**
-	侧边栏
+  侧边栏
 */
 
 .tc-page-controls {
@@ -334,15 +334,15 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 }
 
 .tc-site-title {
-	font-size: 1.75em;
+  font-size: 1.75em;
 }
 
 .tc-sidebar-scrollable {
-	overscroll-behavior: contain;
-	overflow: -moz-scrollbars-none;
+  overscroll-behavior: contain;
+  overflow: -moz-scrollbars-none;
 }
 .tc-sidebar-scrollable::-webkit-scrollbar {
-	width: 0 !important
+  width: 0 !important
 }
 
 /** 顶栏 */
@@ -351,18 +351,18 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 }
 
 @media (min-width: <<sidebarbreakpoint>>) {
-	.tc-sidebar-scrollable {
-	  padding: 40px 10px 0px 15px;
-	}
+  .tc-sidebar-scrollable {
+    padding: 40px 10px 0px 15px;
+  }
 }
 
 @media (max-width: <<sidebarbreakpoint>>) {
-	.tc-sidebar-header {
-	  margin-top: 20px;
+  .tc-sidebar-header {
+    margin-top: 20px;
     /** fix mobile left side still have width after close */
     padding-left: 0;
     padding-right: 0;
-	}
+  }
   .tc-sidebar-header > .tc-reveal {
     padding-left: 10px;
     padding-right: 10px;
@@ -381,22 +381,22 @@ a.tc-tiddlylink.tc-tiddlylink-resolves.tc-plugin-info.tc-popup-handle.tc-popup-a
 }
 
 /**
-	卡片流展示优化
+  卡片流展示优化
 */
 @media (max-width: <<sidebarbreakpoint>>) {
-	.tc-story-river {
-	  padding-top: 42px;
-	}
+  .tc-story-river {
+    padding-top: 42px;
+  }
 }
 
 /**
-	宽屏时隐藏顶部 MenuBar
+  宽屏时隐藏顶部 MenuBar
 */
 
 @media (min-width: <<sidebarbreakpoint>>) {
-	nav.tc-menubar {
-	display: none !important;
-	}
+  nav.tc-menubar {
+  display: none !important;
+  }
 }
 
 /**
