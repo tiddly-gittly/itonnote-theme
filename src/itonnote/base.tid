@@ -490,7 +490,9 @@ video::-webkit-media-controls-timeline {
 </$reveal>
 /** Sidebar on mobile, make it sidebar instead of top bar */
 @media (max-width: <<sidebarbreakpoint>>) {
-  .tc-page-view-classic .tc-sidebar-scrollable {
+  /** Limit this to story view, so it won't affect sidebar on calendar layout. */
+  [class^="tc-page-view-"] .tc-sidebar-scrollable,
+  [class*=" tc-page-view-"] .tc-sidebar-scrollable {
     height: 100vh;
     z-index: 1001;
     position: fixed;
