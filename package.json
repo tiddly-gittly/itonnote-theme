@@ -11,10 +11,17 @@
     "reset": "rimraf ./**/node_modules",
     "clean": "rimraf dist",
     "prepare": "husky",
-    "update": "npm-check-updates -u",
+    "update": "npm-check-updates -u && dprint config update",
     "new": "tiddlywiki-plugin-dev new",
     "build:library": "npm run clean && tiddlywiki-plugin-dev build --library --output dist/library",
-    "publish:offline": "npm run clean && tiddlywiki-plugin-dev publish --offline"
+    "publish:offline": "npm run clean && tiddlywiki-plugin-dev publish --offline",
+    "dev:lan": "tiddlywiki-plugin-dev dev --lan",
+    "test:playwright": "playwright test",
+    "test:playwright:headed": "playwright test --headed",
+    "test:playwright:debug": "playwright test --debug",
+    "lint": "eslint ./src --ext js,ts,tsx,json",
+    "lint:fix": "eslint ./src --ext ts,tsx,json --fix",
+    "check": "tsc --noEmit --skipLibCheck"
   },
   "engines": {
     "node": ">=20"
@@ -43,16 +50,13 @@
     "rimraf": "^6.1.3",
     "ts-node": "^10.9.2",
     "tw5-typed": "^1.1.5",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "@playwright/test": "^1.59.1",
+    "@types/jasmine": "^6.0.0"
   },
   "dependencies": {
     "npm-check-updates": "^20.0.1",
     "tiddlywiki": "^5.3.8",
-    "tiddlywiki-plugin-dev": "^0.5.3"
-  },
-  "pnpm": {
-    "overrides": {
-      "esbuild-plugin-browserslist": "1.0.2"
-    }
+    "tiddlywiki-plugin-dev": "^0.5.7"
   }
 }
